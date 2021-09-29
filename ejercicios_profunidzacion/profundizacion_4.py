@@ -4,7 +4,7 @@
 # Autor: Inove Coding School
 # Version: 2.0
 
-# NOTA: 
+# NOTA:
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
 # Están pensados para aquellos con conocimientos previo o que dispongan
 # de mucho más tiempo para abordar estos temas por su cuenta.
@@ -33,3 +33,69 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+texto_1 = str(input('Ingrese la primera palabra:\n'))
+texto_2 = str(input('Ingrese la segunda palabra:\n'))
+texto_3 = str(input('Ingrese la tercer palabra:\n'))
+print("1 - Ordenar por orden alfabético ")
+print("2 - Ordenar por cantidad de letras")
+opcion = int(input("ingrese opcion: "))
+if(opcion == 1):
+    if(texto_1 > texto_2):
+        if(texto_1 > texto_3):
+            if(texto_2 > texto_3):
+                print(texto_1)
+                print(texto_2)
+                print(texto_3)
+            else:
+                print(texto_1)
+                print(texto_3)
+                print(texto_2)
+        else:
+            print(texto_3)
+            print(texto_1)
+            print(texto_2)
+    else:
+        if(texto_2 > texto_3):
+            if(texto_1 < texto_3):
+                
+                print(texto_2)
+                print(texto_3)
+                print(texto_1)
+            else:
+                print(texto_2)
+                print(texto_1)
+                print(texto_3)
+        else:
+            print(texto_3)
+            print(texto_2)
+            print(texto_1)
+
+if(opcion == 2):
+    if(len(texto_1) > len(texto_2)):
+        if(len(texto_1) > len(texto_3)):
+            if(len(texto_2) > len(texto_3)):
+                print(texto_1)
+                print(texto_2)
+                print(texto_3)
+            else:
+                print(texto_1)
+                print(texto_3)
+                print(texto_2)
+        else:
+            print(texto_3)
+            print(texto_1)
+            print(texto_2)
+    else:
+        if(len(texto_2) > len(texto_3)):
+            if(len(texto_1) < len(texto_3)):
+                print(texto_2)
+                print(texto_3)
+                print(texto_1)
+            else:
+                print(texto_2)
+                print(texto_1)
+                print(texto_3)
+        else:
+            print(texto_3)
+            print(texto_2)
+            print(texto_1)
