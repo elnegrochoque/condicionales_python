@@ -18,19 +18,40 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 # Compare cual de las dos palabras es mayor (alfabéticamente)
 # Imprima en pantalla según corresponda
-
+if (texto_1 > texto_2):
+    print("la primer palabra es mayor")
+else:
+    print("la segunda palabra es mayor")
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
 # Imprima en pantalla según corresponda
 
+if(len(texto_1) < len(texto_2)):
+    print("la segunda palabra tiene mas letras")
+elif(len(texto_1) > len(texto_2)):
+    print("la primera palabara tiene mas letras")
+
+elif(len(texto_1) == len(texto_2)):
+    print("las dos palabras tienen la misma cantidad de letras")
+
 # Verifique si la primera letra de la primera palabra
 # es mayor a la primera letra de la segunda palabra
 # Imprima en pantalla según corresponda
+
+if(texto_1[0]>texto_2[0]):
+    print("la primer letra de la primer palabra \nes mayor a la primer letra de la segunda palabra")
+
 
 copia_texto_1 = texto_1  # Copia de la variable texto_1
 
 # Verifique que copia_texto_1 es igual a texto_1
 # Imprima en pantalla según corresponda
 
+if(copia_texto_1==texto_1):
+    print("son iguales")
+
 # Verifique que copia_texto_1 es distinta a texto_2
 # Imprima en pantalla según corresponda
+
+if(copia_texto_1!=texto_2):
+    print("son distintos")
